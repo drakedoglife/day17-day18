@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/popper.js/1.14.3/popper.min.js"></script>-->
+<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<title>3的倍数</title>
+<script>
+//从1到100，以此在console输出各数字，但是，当数字为3的倍数或者含有3的时候，输出“PA” 
+  function myfunction() {
+    for(i = 1;i < 101;i++) {
+      if((i%3)==0 || (i/10)==3 || (i%10)==3) {
+        console.log('PA');
+      }
+      else {
+        console.log(i);
+      }
+    }
+  }
+</script>
+</head>
+<body>
+  <div class='container'>
+    <div class='card'>
+      <div class='card-header bg-dark text-light text-center'>找出3的倍数</div>
+      <div class='card-body bg-warning text-dark text-center'><button class='btn btn-danger' onclick="myfunction()">开始执行</button></div>
+      <div class='card-footer bg-secondary text-light text-center'>执行结束</div>
+    </div>
+  </div>
+</body>
+</html>
